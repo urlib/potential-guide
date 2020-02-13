@@ -1,0 +1,1 @@
+dism /online /add-provisionedappxpackage /packagepath:c:\dell\5Y2D2\RstHsaBridge_17.2.1010.0_x64_bundle.appxbundle /dependencypackagepath:c:\dell\5Y2D2\Microsoft.VCLibs.140.00.UWPDesktop_14.0.27323.0_x64__8wekyb3d8bbwe.appx  /licensepath:c:\dell\5Y2D2\639f03bbe9b342269865e6ada07946de_License1.xml /Region="all"
