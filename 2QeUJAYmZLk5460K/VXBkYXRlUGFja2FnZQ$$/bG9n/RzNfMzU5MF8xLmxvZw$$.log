@@ -1,0 +1,93 @@
+
+**************************************************
+***Dell Firmware Update started on 7/21/2019 at 9:20:59***
+Command: C:\ProgramData\SupportAssist\Client\Agent\Downloads\44e158fb-0625-4790-a8eb-0093f13f2add\G3_3590_1.4.3.exe 
+
+WSMT Supported: Using WMI commands.
+Registry creation is Success at \SOFTWARE\DELL\FirmwareUpdate
+Executing: C:\Users\joefa\AppData\Local\Temp\Dell\ui.exe -y -oC:\Users\joefa\AppData\Local\Temp\Dell
+Executing: C:\Users\joefa\AppData\Local\Temp\Dell\UI\DellFlashUi.exe (null) (null) (null)
+
+------------------------------------------
+System BIOS with BIOS Guard: Current Version:BCD:1.3.0: --- New Version:BCD:1.4.3
+Embedded Controller : Current Version:BCD:1.0.0: --- New Version:BCD:1.0.3
+Intel Management Engine (Non-VPro) Update: Current Version:BCD:12.0.34.1425: --- New Version:BCD:12.0.35.1427
+System Map          : Current Version:BCD:1.0.1: --- New Version:BCD:1.0.1
+PCR0 XML            : Current Version:BCD:1.0.0: --- New Version:BCD:1.0.0
+Platform PowerDelivery Port Controller: Current Version:BCD:0.3.64.81: --- New Version:BCD:0.4.64.81
+Bios Connect Base and Support: Current Version:BCD:0.0.0.1: --- New Version:BCD:0.0.0.1
+Bios Connect wireless: Current Version:BCD:0.0.0.1: --- New Version:BCD:0.0.0.1
+
+------------------------------------------
+Located the dedicated image or no dedicated image requested for this system.
+Comparing: description:System BIOS with BIOS Guard Device FW:1.3.0 : Payload FW:1.4.3
+
+New Firmware is available for: System BIOS with BIOS Guard. Start RBU
+
+
+Exit Code = 6 (Rebooting System)
+***Dell Firmware Update finished at 7/21/2019 at 9:22:00***
+
+Registry creation is Success at \SOFTWARE\DELL\FirmwareUpdate
+
+**************************************************
+***Dell Firmware Update started on 8/9/2019 at 20:28:56***
+Command: C:\ProgramData\SupportAssist\Client\Agent\Downloads\67d2ff4c-8dc5-46b2-b085-e7fda046a62e\G3_3590_1.5.1.exe 
+
+WSMT Supported: Using WMI commands.
+Registry creation is Success at \SOFTWARE\DELL\FirmwareUpdate
+Executing: C:\Users\joefa\AppData\Local\Temp\Dell\ui.exe -y -oC:\Users\joefa\AppData\Local\Temp\Dell
+Executing: C:\Users\joefa\AppData\Local\Temp\Dell\UI\DellFlashUi.exe (null) (null) (null)
+
+------------------------------------------
+System BIOS with BIOS Guard: Current Version:BCD:1.4.3: --- New Version:BCD:1.5.1
+Embedded Controller : Current Version:BCD:1.0.3: --- New Version:BCD:1.0.4
+Intel Management Engine (Non-VPro) Update: Current Version:BCD:12.0.35.1427: --- New Version:BCD:12.0.35.1427
+System Map          : Current Version:BCD:1.0.1: --- New Version:BCD:1.0.1
+PCR0 XML            : Current Version:BCD:1.0.0: --- New Version:BCD:1.0.0
+Platform PowerDelivery Port Controller: Current Version:BCD:0.4.64.81: --- New Version:BCD:0.4.64.81
+Bios Connect Base and Support: Current Version:BCD:0.0.0.1: --- New Version:BCD:0.0.0.1
+Bios Connect wireless: Current Version:BCD:0.0.0.1: --- New Version:BCD:0.0.0.1
+
+------------------------------------------
+Located the dedicated image or no dedicated image requested for this system.
+Comparing: description:System BIOS with BIOS Guard Device FW:1.4.3 : Payload FW:1.5.1
+
+New Firmware is available for: System BIOS with BIOS Guard. Start RBU
+
+
+Exit Code = 6 (Rebooting System)
+***Dell Firmware Update finished at 8/9/2019 at 20:30:12***
+
+Registry creation is Success at \SOFTWARE\DELL\FirmwareUpdate
+
+**************************************************
+***Dell Firmware Update started on 8/24/2019 at 21:34:01***
+Command: C:\ProgramData\SupportAssist\Client\Agent\Downloads\ea7d6f2a-be48-49bf-bc79-d6a0b398bb1c\G3_3590_1.6.0.exe 
+
+WSMT Supported: Using WMI commands.
+Registry creation is Success at \SOFTWARE\DELL\FirmwareUpdate
+Executing: C:\Users\joefa\AppData\Local\Temp\Dell\ui.exe -y -oC:\Users\joefa\AppData\Local\Temp\Dell
+Executing: C:\Users\joefa\AppData\Local\Temp\Dell\UI\DellFlashUi.exe (null) (null) (null)
+
+------------------------------------------
+System BIOS with BIOS Guard: Current Version:BCD:1.5.1: --- New Version:BCD:1.6.0
+Embedded Controller : Current Version:BCD:1.0.4: --- New Version:BCD:1.0.5
+Intel Management Engine (Non-VPro) Update: Current Version:BCD:12.0.35.1427: --- New Version:BCD:12.0.35.1427
+System Map          : Current Version:BCD:1.0.1: --- New Version:BCD:1.0.1
+PCR0 XML            : Current Version:BCD:1.0.0: --- New Version:BCD:1.0.0
+Platform PowerDelivery Port Controller: Current Version:BCD:0.4.64.81: --- New Version:BCD:0.4.64.81
+Bios Connect Base and Support: Current Version:BCD:0.0.0.1: --- New Version:BCD:0.0.0.1
+Bios Connect wireless: Current Version:BCD:0.0.0.1: --- New Version:BCD:0.0.0.1
+
+------------------------------------------
+Located the dedicated image or no dedicated image requested for this system.
+Comparing: description:System BIOS with BIOS Guard Device FW:1.5.1 : Payload FW:1.6.0
+
+New Firmware is available for: System BIOS with BIOS Guard. Start RBU
+
+
+Exit Code = 6 (Rebooting System)
+***Dell Firmware Update finished at 8/24/2019 at 21:34:43***
+
+Registry creation is Success at \SOFTWARE\DELL\FirmwareUpdate
