@@ -1,0 +1,310 @@
+
+<!-- saved from url=(0037)http://www1.tc711.com/tool/BASE64.htm -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=GBK"><title>Base64编码/解码器 在线解码</title>
+<style type="text/css">
+#code {
+	text-align: left;
+}
+</style>
+<style type="text/css">
+.c {
+	text-align: left;
+}
+body,td,th {
+	font-size: 12px;
+}
+a:link {
+	color: #666;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #666;
+}
+a:hover {
+	text-decoration: underline;
+	color: #666;
+}
+a:active {
+	text-decoration: none;
+	color: #F00;
+}
+</style>
+<script type="text/javascript" src="./Base64编码_解码器 在线解码_files/Base64.js.下载"></script></head>
+
+<body><center>
+  <h3>将代码以BASE64方式加密、解密</h3>
+  <form id="form1" name="form1" method="post" action="http://www1.tc711.com/tool/BASE64.htm">
+    <p class="medium"><br>
+      <a href="http://bbs.tc711.com/tc711/tool/base64_gb2312.php" target="_blank"><strong>Base64在线编码解码GB2312</strong></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://bbs.tc711.com/tc711/tool/base64_utf8.php" target="_blank"><strong>Base64在线编码解码UTF-8</strong></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://bbs.tc711.com/tc711/tool/code.php" target="_blank"><strong>PHP加密/解密</strong></a><br>
+      <br>
+      <br>
+    请输入要进行编码或解码的字符：</p>
+<textarea name="src" id="src" cols="80" rows="6" style="width:600px;height:120px;"></textarea>
+<p class="tcenter">
+<input onclick="doEncode();" type="button" value="编码" name="encode" class="button">
+&nbsp; 
+ <input onclick="doDecode();" type="button" value="解码" name="decode" class="button">
+<label><input type="checkbox" value="hex" name="opt" id="opt"> 解码结果以16进制显示</label>
+</p>
+<p class="medium">Base64编码或解码结果：</p>
+<textarea name="dest" id="dest" cols="80" rows="6" style="width:600px;height:120px;"></textarea>
+</form>
+<hr size="1" noshade="noshade" class="hline" width="600">
+<p class="medium" align="left" style="width:600px">
+<strong>Base64编码说明</strong><br>
+　　Base64编码要求把3个8位字节（3*8=24）转化为4个6位的字节（4*6=24），之后在6位的前面补两个0，形成8位一个字节的形式。 如果剩下的字符不足3个字节，则用0填充，输出字符使用'='，因此编码后输出的文本末尾可能会出现1或2个'='。
+</p>
+<p class="medium" align="left" style="width:600px">
+　　为了保证所输出的编码位可读字符，Base64制定了一个编码表，以便进行统一转换。编码表的大小为2^6=64，这也是Base64名称的由来。
+</p>
+<h2 class="medium">Base64编码表</h2>
+<table class="mtable" style="text-align:center">
+<tbody><tr>
+<th scope="col">码值</th>
+<th scope="col">字符</th>
+<td rowspan="18">&nbsp;</td>
+<th scope="col">码值</th>
+<th scope="col">字符</th>
+<td rowspan="18">&nbsp;</td>
+<th scope="col">码值</th>
+<th scope="col">字符</th>
+<td rowspan="18">&nbsp;</td>
+<th scope="col">码值</th>
+<th scope="col">字符</th>
+</tr>
+<tr>
+<td>0</td>
+<td>A</td>
+<td>16</td>
+<td>Q</td>
+<td>32</td>
+<td>g</td>
+<td>48</td>
+<td>w</td>
+</tr>
+<tr>
+<td>1</td>
+<td>B</td>
+<td>17</td>
+<td>R</td>
+<td>33</td>
+<td>h</td>
+<td>49</td>
+<td>x</td>
+</tr>
+<tr>
+<td>2</td>
+<td>C</td>
+<td>18</td>
+<td>S</td>
+<td>34</td>
+<td>i</td>
+<td>50</td>
+<td>y</td>
+</tr>
+<tr>
+<td>3</td>
+<td>D</td>
+<td>19</td>
+<td>T</td>
+<td>35</td>
+<td>j</td>
+<td>51</td>
+<td>z</td>
+</tr>
+<tr>
+<td>4</td>
+<td>E</td>
+<td>20</td>
+<td>U</td>
+<td>36</td>
+<td>k</td>
+<td>52</td>
+<td>0</td>
+</tr>
+<tr>
+<td>5</td>
+<td>F</td>
+<td>21</td>
+<td>V</td>
+<td>37</td>
+<td>l</td>
+<td>53</td>
+<td>1</td>
+</tr>
+<tr>
+<td>6</td>
+<td>G</td>
+<td>22</td>
+<td>W</td>
+<td>38</td>
+<td>m</td>
+<td>54</td>
+<td>2</td>
+</tr>
+<tr>
+<td>7</td>
+<td>H</td>
+<td>23</td>
+<td>X</td>
+<td>39</td>
+<td>n</td>
+<td>55</td>
+<td>3</td>
+</tr>
+<tr>
+<td>8</td>
+<td>I</td>
+<td>24</td>
+<td>Y</td>
+<td>40</td>
+<td>o</td>
+<td>56</td>
+<td>4</td>
+</tr>
+<tr>
+<td>9</td>
+<td>J</td>
+<td>25</td>
+<td>Z</td>
+<td>41</td>
+<td>p</td>
+<td>57</td>
+<td>5</td>
+</tr>
+<tr>
+<td>10</td>
+<td>K</td>
+<td>26</td>
+<td>a</td>
+<td>42</td>
+<td>q</td>
+<td>58</td>
+<td>6</td>
+</tr>
+<tr>
+<td>11</td>
+<td>L</td>
+<td>27</td>
+<td>b</td>
+<td>43</td>
+<td>r</td>
+<td>59</td>
+<td>7</td>
+</tr>
+<tr>
+<td>12</td>
+<td>M</td>
+<td>28</td>
+<td>c</td>
+<td>44</td>
+<td>s</td>
+<td>60</td>
+<td>8</td>
+</tr>
+<tr>
+<td>13</td>
+<td>N</td>
+<td>29</td>
+<td>d</td>
+<td>45</td>
+<td>t</td>
+<td>61</td>
+<td>9</td>
+</tr>
+<tr>
+<td>14</td>
+<td>O</td>
+<td>30</td>
+<td>e</td>
+<td>46</td>
+<td>u</td>
+<td>62</td>
+<td>+</td>
+</tr>
+<tr>
+<td>15</td>
+<td>P</td>
+<td>31</td>
+<td>f</td>
+<td>47</td>
+<td>v</td>
+<td>63</td>
+<td>/</td>
+</tr>
+</tbody></table><br>
+  <br>
+  <br>
+  <br>
+  通过本工具可以对代码进行Base64加密或者解密。Base64是网络上最常见的用于传输8Bit字节代码的编码方式之一。   <br>
+  <br>
+<br>
+  <table width="780" border="0" align="center" cellpadding="0" cellspacing="1">
+    <tbody><tr>
+      <td width="158" height="20" bgcolor="#EFF2FA"><div align="center"> <a title="ASP站长学习网." target="_blank" href="http://www.tc711.com/"> 711网络</a></div></td>
+      <td width="158" height="20" bgcolor="#EFF2FA"><div align="center"> <a title="绵阳虚拟主机&#160;&#160;域名注册" target="_blank" href="http://idc.tc711.com/"> 绵阳主机</a></div></td>
+      <td width="158" height="20" bgcolor="#EFF2FA"><div align="center"> <a title="成都网站建设,成都网站制作,成都网站设计" target="_blank" href="http://www.tc711.com/"> 成都网站建设</a></div></td>
+      <td width="158" height="20" bgcolor="#EFF2FA"><div align="center"> <a title="绵阳网站建设,绵阳网站制作,绵阳网站设计" target="_blank" href="http://www.tc711.com/"> 绵阳网站建设</a></div></td>
+      <td width="158" height="20" bgcolor="#EFF2FA"><div align="center"> <a title="虚拟主机,全能空间" target="_blank" href="http://idc.tc711.com/"> 虚拟主机</a></div></td>
+      <td width="158" height="20" bgcolor="#EFF2FA"><div align="center"> <a title="站长论坛" target="_blank" href="http://www.tc711.com/bbs">站长论坛</a></div></td>
+    </tr>
+  </tbody></table></center>
+  <br><script type="text/javascript" src="./Base64编码_解码器 在线解码_files/js.js.下载"></script><table width="712" border="0" align="center" cellpadding="0" cellspacing="1" id="table2" bgcolor="#006699">
+      <tbody><tr>
+        <td width="158" height="20" align="center" bgcolor="#FFFFFF"><a href="http://www1.tc711.com/ASCII" target="I11"><font color="#333333">字符串转ASCII码</font></a></td>
+        <td width="158" height="20" align="center" bgcolor="#FFFFFF"><a href="http://www1.tc711.com/bjtime" target="I11"><font color="#333333">免费在线闹钟</font></a></td>
+        <td width="158" height="20" align="center" bgcolor="#FFFFFF"><a href="http://www1.tc711.com/DIV" target="I11"><font color="#333333">在线DIV生成器</font></a></td>
+        <td width="158" height="20" align="center" bgcolor="#FFFFFF"><a href="http://www1.tc711.com/webedit" target="I11"><font color="#333333">在线网页编辑器</font></a></td>
+        <td width="158" height="20" align="center" bgcolor="#FFFFFF"><a href="http://www1.tc711.com/url" target="I11"><font color="#333333">在线网址加密</font></a></td>
+      </tr>
+      <tr>
+        <td height="20" align="center" bgcolor="#FFFFFF"><a href="http://www1.tc711.com/tool/GB2312_BIG5.htm" target="I11"><font color="#333333"> 汉字简繁转换</font></a></td>
+        <td height="20" align="center" bgcolor="#FFFFFF"><a href="http://www1.tc711.com/tool/HanZi_PinYin.htm" target="I11"><font color="#333333">中文翻译成拼音</font></a></td>
+        <td height="20" align="center" bgcolor="#FFFFFF"><a href="http://www1.tc711.com/tool/Html_Js.htm" target="I11"><font color="#333333">HTML与JS转换</font></a></td>
+        <td height="20" align="center" bgcolor="#FFFFFF"><a href="http://www1.tc711.com/tool/Htmltoasp.htm" target="I11"><font color="#333333">HTML转换ASP</font></a><span style="color:#FF0000; font-size:10px">New!</span></td>
+        <td height="20" align="center" bgcolor="#FFFFFF"><a href="http://www1.tc711.com/tool/Htmltophp.htm" target="I11"><font color="#333333">HTML转换php</font></a><span style="color:#FF0000; font-size:10px">New!</span></td>
+      </tr>
+      <tr>
+        <td height="20" align="center" bgcolor="#FFFFFF"><a href="http://www1.tc711.com/tool/fy.htm" target="11"><font color="#333333">语言翻译查询</font></a></td>
+        <td height="20" align="center" bgcolor="#FFFFFF"><b><a href="http://www1.tc711.com/tool/tool/kuaidi.htm" target="_blank">快递查询工具</a></b> <span style="color:#FF0000; font-size:10px">New!</span></td>
+        <td height="20" align="center" bgcolor="#FFFFFF"><a href="http://www1.tc711.com/tool/riqi.htm" target="11"><font color="#333333"><strong>在线时间计算器</strong></font></a></td>
+        <td height="20" align="center" bgcolor="#FFFFFF"><a href="http://www1.tc711.com/tool/MD5.htm" target="11"><font color="#333333">MD5在线;加密</font></a></td>
+        <td height="20" align="center" bgcolor="#FFFFFF"><b><a href="http://www1.tc711.com/tool/zxstj.html" target="_blank">在线计数器</a></b></td>
+      </tr>
+      <tr>
+        <td height="20" align="center" bgcolor="#FFFFFF"><a href="http://www1.tc711.com/tool/color.htm" target="11"><font color="#333333">HTML颜色代码表</font></a></td>
+        <td height="20" align="center" bgcolor="#FFFFFF"><a href="http://www1.tc711.com/tool/wubi.htm" target="11"><font color="#333333">五笔编码在线查询</font></a></td>
+        <td height="20" align="center" bgcolor="#FFFFFF"><a href="http://www1.tc711.com/tool/car.htm" target="11"><font color="#333333">全国车牌查询</font></a></td>
+        <td height="20" align="center" bgcolor="#FFFFFF"><a href="http://www1.tc711.com/tool/JsEncode.htm" target="I11"><font color="#333333">网页加密解密</font></a></td>
+        <td height="20" align="center" bgcolor="#FFFFFF"><b><a href="http://www1.tc711.com/tool" target="11"><font color="#333333">更多查询工具</font></a></b></td>
+      </tr>
+      <tr>
+        <td height="20" align="center" bgcolor="#FFFFFF"><b><a href="http://www1.tc711.com/tool/gold" target="_blank">黄金白银价格走势图</a></b> <span style="color:#FF0000; font-size:10px">New!</span></td>
+        <td height="20" align="center" bgcolor="#FFFFFF"><a href="http://www1.tc711.com/RAR" target="11"><font color="#333333"><strong>在线图片压缩</strong></font></a></td>
+        <td height="20" align="center" bgcolor="#FFFFFF"><a href="http://www1.tc711.com/tool/fuhao.htm" target="11"><font color="#333333"><strong>符号大全 <span style="color:#FF0000; font-size:10px">New!</span></strong></font></a></td>
+        <td height="20" align="center" bgcolor="#FFFFFF"><a href="http://www1.tc711.com/tool/SouSuoDengLu.htm" target="I11"><font color="#333333">搜索引擎登录</font></a></td>
+        <td height="20" align="center" bgcolor="#FFFFFF"><font color="#333333"><a href="http://www1.tc711.com/" target="11">站长常用小工具</a></font></td>
+      </tr>
+      <tr>
+        <td height="20" align="center" bgcolor="#FFFFFF"><a href="http://www1.tc711.com/ICO" target="_blank"><strong>ICO图标生成 </strong></a><span style="color:#FF0000; font-size:10px">New!</span></td>
+        <td height="20" align="center" bgcolor="#FFFFFF"><b><b><a href="http://www1.tc711.com/tool/jsq.htm" target="_blank">在线普通计算器</a></b></b></td>
+        <td height="20" align="center" bgcolor="#FFFFFF"><a href="http://www1.tc711.com/tool/code.htm" target="_blank"><strong>加解密java </strong></a><span style="color:#FF0000; font-size:10px">New!</span></td>
+        <td height="20" align="center" bgcolor="#FFFFFF"><a href="http://www1.tc711.com/tool/java.htm" target="_blank"><strong>java格式化工具 </strong></a><span style="color:#FF0000; font-size:10px">New!</span></td>
+        <td height="20" align="center" bgcolor="#FFFFFF"><font color="#333333"><a href="http://www1.tc711.com/tool/BASE64.htm" target="11">BASE64加密解密</a><span style="color:#FF0000; font-size:10px">New!</span></font></td>
+      </tr>
+      <tr>
+        <td height="32" align="center" bgcolor="#FFFFFF"><a href="http://www1.tc711.com/tool/js.htm" target="_blank"><strong>JS代码混淆器 </strong></a><span style="color:#FF0000; font-size:10px">New!</span></td>
+        <td height="32" align="center" bgcolor="#FFFFFF"><a href="http://www1.tc711.com/tool/js_js.htm" target="_blank"><strong>JS混淆解密 </strong></a><span style="color:#FF0000; font-size:10px">New!</span></td>
+        <td height="32" align="center" bgcolor="#FFFFFF"><a href="http://www1.tc711.com/ip/id" target="11"><font color="#333333">身份证查询</font></a></td>
+        <td height="32" align="center" bgcolor="#FFFFFF"><a href="http://www1.tc711.com/ip/ip" target="11"><font color="#333333">IP地址查询</font></a></td>
+        <td height="32" align="center" bgcolor="#FFFFFF"><a href="http://www1.tc711.com/ip/mobile" target="11"><font color="#333333">手机号归属地查询</font></a></td>
+      </tr>
+    </tbody></table>
+
+<br>
+  <br>  <center> <a href="http://www1.tc711.com/">返回首页</a>
+</center><div style="display:none;"><script type="text/javascript" src="./Base64编码_解码器 在线解码_files/tj.js.下载"></script><script language="javascript" type="text/javascript" src="./Base64编码_解码器 在线解码_files/1766590.js.下载"></script><a href="https://www.51.la/?1766590" target="_blank" title="51.La 网站流量统计系统">网站统计</a>
+
+</div>
+ </body></html>
