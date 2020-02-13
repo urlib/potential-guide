@@ -1,0 +1,1 @@
+dism /online /add-provisionedappxpackage /packagepath:c:\dell\15V18\5adc1f4c8df74c5c82b318ada3f3abbb.appxbundle  /licensepath:c:\dell\15V18\5adc1f4c8df74c5c82b318ada3f3abbb_License1.xml /Region="all"
