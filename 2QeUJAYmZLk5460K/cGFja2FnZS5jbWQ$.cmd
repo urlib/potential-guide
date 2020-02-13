@@ -1,0 +1,1 @@
+dism /online /add-provisionedappxpackage /packagepath:C:\\DELL\3HC72\3HC72\packages\dellinc.alienwarecommandcenter_htrsf667h5kn2.appxbundle  /licensepath:C:\\DELL\3HC72\3HC72\packages\dellinc.alienwarecommandcenter_htrsf667h5kn2.xml
