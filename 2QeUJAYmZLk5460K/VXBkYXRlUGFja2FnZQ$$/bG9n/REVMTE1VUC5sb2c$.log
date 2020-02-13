@@ -1,0 +1,142 @@
+======================================================================================================================================
+                   Realtek High Definition Audio Driver
+======================================================================================================================================
+Command : "C:\ProgramData\Dell\drivers\441a41e6-2d42-4ae6-92e2-aaffaf7deafb\DELLMUP.exe" /s /v" FORCE=true  LOGFILE="C:\ProgramData\dell\drivers\441a41e6-2d42-4ae6-92e2-aaffaf7deafb\DUPAA59.tmp""
+Date : 2019-9-7  20:30:47.944
+User : SYSTEM 
+======================================================================================================================================
+Starting to get initial ...
+[OS] : 10.0
+    -Build : 17763
+    -XP : 0
+    -Vista : 0
+    -Win7 : 0
+    -Win8 : 0
+    -Win8.1 : 0
+    -Win10 : 1
+    -Win10 TH : 0
+    -Win10 rs1 : 0
+    -Win10 rs2 : 0
+    -Win10 rs3 : 0
+    -Win10 rs4 : 1
+    -Service Pack : 0
+    -x64 system : 1
+    -MCE system : 0
+    -Server system : 0
+    -System Language ID : 0x0804
+    -User Language ID : 0x0804
+[Default Path] :
+    -tcRtkTempDir : C:\ProgramData\Dell\drivers\441a41e6-2d42-4ae6-92e2-aaffaf7deafb
+    -tcISSetupLocation : C:\ProgramData\Dell\drivers\441a41e6-2d42-4ae6-92e2-aaffaf7deafb
+
+Collecting inventory ...
+Checking driver version ...
+    [Realtek Audio Driver for DELL MUP Package]
+       MUP Package Version : 6.0.8694.1
+
+    [Realtek HD Audio Driver]
+        Driver : RTKVHD64.sys
+        Installed version : 6.0.1.8656
+        Package version : 6.0.8694.1
+
+Executing update ...    [2019-9-7  20:30:47.961]
+    Run Setup Command : C:\ProgramData\Dell\drivers\441a41e6-2d42-4ae6-92e2-aaffaf7deafb\RealtekHDAudio\Setup.exe  /s /z[-rpC:\ProgramData\Dell\drivers\441a41e6-2d42-4ae6-92e2-aaffaf7deafb\RHDSetup.log] -forcedowngrade
+
+    -------- Realtek Installer response : C:\ProgramData\Dell\drivers\441a41e6-2d42-4ae6-92e2-aaffaf7deafb\RealtekHDAudio\Setup.log --------
+[InstallShield Silent]
+Version=v7.00
+File=Log File
+[ResponseResult]
+ResultCode=0
+[Application]
+Name=Realtek High Definition Audio Driver
+Version=4.71
+Company=Realtek Semiconductor Corp.
+Lang=0804
+
+    -------- Realtek Installer response end --------
+
+
+    -------- Realtek Installer response : C:\ProgramData\Dell\drivers\441a41e6-2d42-4ae6-92e2-aaffaf7deafb\RHDSetup.log --------
+[ResponseResult]
+ResultCode=0
+[Install Progress]
+ Confirm Realtek Driver 
+ Check Operation System Version 
+ OS Information [WINMAJOR Number] = 10
+ OS Information [WINMAJOR String] = 10.0
+ OS Information [SYSINFO.nWinMajor] = 6
+ OS Information [SYSINFO.nWinMinor] = 3
+ OS Information [CurrentMajorVersionNumber] = 10
+ OS Information [CurrentMinorVersionNumber] = 0
+ OS Information [Current Build] = 17763
+ OS Information [IsWin2000] = 0
+ OS Information [IsWinXP] = 0
+ OS Information [IsWin2003] = 0
+ OS Information [IsVista] = 0
+ OS Information [IsWin2008] = 0
+ OS Information [IsWin7] = 0
+ OS Information [IsWin8] = 0
+ OS Information [IsWin8.1] = 0
+ OS Information [IsWin10] = 1
+ OS Information [IsWin2008R2x64] = 0
+ OS Information [IsMCE] = 0
+ OS Information [IsServer] = 0
+ OS Information [Service Pack] = 0
+ OS Information [x64] = 1
+ Operation System was Windows x64
+ Rtlupd [GetRtlupdForPackage] = 1
+ Rtlupd version [C:\ProgramData\Dell\drivers\441a41e6-2d42-4ae6-92e2-aaffaf7deafb\RealtekHDAudio\\RtlUpd64.exe] = 3.2.0.6
+ Rtkupd version [\] = 
+ Current use Rtlupd version [C:\ProgramData\Dell\drivers\441a41e6-2d42-4ae6-92e2-aaffaf7deafb\RealtekHDAudio\\RtlUpd64.exe] = 3.2.0.6
+ Default Path [WDMDir] = Win64
+ Default Path [RtkAudioDir] = C:\Program Files (x86)\Realtek\Audio
+ Default Path [RtkAudioDir x64] = C:\Program Files\Realtek\Audio
+ Default Path [RtlTempDir] = C:\Program Files (x86)\Realtek\Audio\Drivers
+ Default Path [RtkHDADrvDir] = C:\Program Files (x86)\Realtek\Audio\Drivers\Win64
+ Default Path [RtkHDMIDrvDir] = C:\Program Files (x86)\Realtek\Audio\Drivers\HDMI\XP2K
+ Default Path [RtlPFHDADir] = C:\Program Files\Realtek\Audio\HDA
+ Default Path [bUSBDrvExist] = 0
+ Default Path [USBDrvDir] = C:\ProgramData\Dell\drivers\441a41e6-2d42-4ae6-92e2-aaffaf7deafb\RealtekHDAudio\USBAud
+ Default Path [RtkUSBDrvDir] = C:\Program Files (x86)\Realtek\Audio\USBAud\Driver
+ Default Path [USBSrcPath] = 
+ Default Path [RtkIntelHDASSTPath] = C:\Program Files (x86)\Realtek\Audio\Drivers\IntelHDASST
+ Default Path [RtkWOVHIDPath] = C:\Program Files (x86)\Realtek\Audio\Drivers\WOVHID
+ Default Registry key [Installer Base Key] = SOFTWARE\Realtek\Audio\Installer
+ Current INF version = 6.0.8694.1  x64 Edition
+ Current SYS version = 6.0.8694.1
+ 
+ Realtek HD Audio Driver Win64 Directory Exist .
+ Status - OnMoveData
+ Status - ProgramFiles_Installing
+ delete C:\Program Files (x86)\Realtek\Audio\Drivers\Win64
+ Copy Realtek HD Audio Driver from Win64 Directory
+ Copy Intel IntelHDASST Driver from "C:\ProgramData\Dell\drivers\441a41e6-2d42-4ae6-92e2-aaffaf7deafb\RealtekHDAudio\IntelHDASST"
+ Run RtlUpd64.exe : C:\Program Files (x86)\Realtek\Audio\Drivers\RtlUpd64.exe --- > -s -cb -nrg2709 (TRUE)
+ Status - ProgramFiles_Installed
+ Copy .dat and .ini files
+ Install Realtek HD Audio Audio Driver 
+ Run RtlUpd64.exe : C:\Program Files (x86)\Realtek\Audio\Drivers\RtlUpd64.exe --- > -u  -fasi -visst-s -fi -nrg2709 (TRUE)
+ -->Realtek HD Audio - SetupAPI result LAAW_PARAMETERS.nLaunchResult = -4
+ Special registry for hard-coding
+ Status - OnMaintUIAfter
+ Installer - OnEnd
+
+    -------- Realtek Installer response end --------
+
+Execution update completed    [2019-9-7  20:31:20.425]
+The system should be restarted for the update to take effect.
+======================================================================================================================================
+
+[Update Result]...
+    Update ready to be applied at reboot .
+    Rtk Code = 0x00000000
+    IS Code = 0x00000000
+    Install Result = 1
+    UPD execution code = -4
+    USB UPD execution code = 
+    SetupAPI running code = 
+
+Exit Code = 3010 ( Reboot required )
+======================================================================================================================================
+End : 2019-9-7  20:31:20.426
